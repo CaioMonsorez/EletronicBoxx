@@ -1,0 +1,144 @@
+@keyframes pisca{
+    0% {opacity: 0.2;}
+    50% {opacity:1;}
+    100% {opacity:0.2;}
+}
+
+body {
+    margin:30;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif
+
+}
+.urna {
+    background-color:#dbd5c9;
+    padding:30px;
+    display:flex; 
+}
+.tela{
+    width: 500px;
+    height:320px;
+    background:linear-gradient(to right, #E8E8E8, #C1C1C1);
+    border:2px solid #555;
+    display:flex;
+    flex-direction:column;
+}
+.teclado{
+    background-color: #403A3A;
+    margin-left: 30px;
+}
+.teclado--botao{
+    width:70px;
+    height:40px;
+    background-color:#000;
+    color:#fff;
+    font-size:25px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin:10px;
+    cursor:pointer;
+    box-shadow:3px 3px 0px #555
+}
+.teclado--linha{
+    display:flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+.btn--branco{
+    background-color:#fff;
+    color:#000;
+    font-size:15px;
+}
+.btn--corrige{
+    background-color:#f09046;
+    color:#000;
+    font-size:15px;
+}
+.btn--confirma{
+    background-color:#48c079;
+    color: #000;
+    font-size:15px;
+    width:90px;
+    height:50px;
+}
+
+.divisaocima{
+    flex:1;
+    display:flex;
+}
+.divisaocima-left{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    padding-left:20px;
+}
+.divisaocima-left1{
+    height: 50px;
+    display:flex;
+    align-items: center;
+}
+.divisaocima-left2{
+    height: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.divisaocima-left3{
+    height: 50px;
+}
+.numero{
+    display:inline-block;
+    width:30px;
+    height:40px;
+    border: 1px solid #000;
+    text-align:center;
+    line-height:40px;
+    font-size:25;
+}
+
+.pisca{
+    animation-name:pisca;
+    animation-duration:1s;
+    animation-iteration-count:infinite
+}
+.divisaocima-left4{
+    
+    float: 1px;
+    line-height:30px;
+}
+
+.divisaocima-right{
+    width: 90px;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-end;
+}
+.divisaocima-image{
+    border:1px solid #000;
+    background-color:#fff;
+    text-align: center;
+    font-size: 14px;
+}
+.divisaocima-image img {
+    width:100%;
+}
+.divisaocima-image small{
+    font-size:12px;
+    width:80%;
+
+}
+
+.divisaobaixo{
+    height:50px;
+    font-size:14px;
+    border-top:2px solid #000;
+    padding-left:10px;
+}
+.aviso--grande{
+    font-size: 46px;
+    font-weight: bold ;
+    text-align: center;
+}

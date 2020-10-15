@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Urna Bonieky Lacerda</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!--Layout Urna---marlon nardin adicionar arduidno-->
+    <div class="urna">
+        <div class="tela">
+            <div class="divisaocima">
+                <div class="divisaocima-left">
+                    <div class="divisaocima-left1">
+                        <span>SEU VOTO PARA</span>
+                    </div>
+                    <div class="divisaocima-left2">
+                        <span>PREFEITO</span>
+                    </div>
+                    <div class="divisaocima-left3">
+                        <div class="numero pisca"></div>
+                        <div class="numero"></div>
+                    </div>
+                    <div class="divisaocima-left4">
+                        NOME: CAIO MONSOREZ</br>
+                        PARTIDO: PRGM</br>
+                        VICE PREFEITO: INDEFINIDO
+
+                    </div>
+                </div>
+                <div class="divisaocima-right">
+                    <div class="divisaocima-image">
+                        <img src="images/caio.jpeg" alt=""/>
+                        PREFEITO
+                    </div>
+                    <div class="divisaocima-image small">
+                        <img src="images/interrogacao.jpg" alt=""/>
+                        VICE-PREFEITO
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="divisaobaixo">
+                Aperte a tela:<br/>
+                CONFIRMA para CONFIRMAR este voto</br>
+                CORRIGE para CORRIGIR este voto</br>
+
+                
+            </div>
+        </div>
+        
+        <div class="teclado">
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick= "clicou ('1')">1</div>
+                <div class="teclado--botao" onclick= "clicou ('2')">2</div>
+                <div class="teclado--botao" onclick= "clicou ('3')">3</div>
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick= "clicou ('4')">4</div>
+                <div class="teclado--botao" onclick= "clicou ('5')">5</div>
+                <div class="teclado--botao" onclick= "clicou ('6')">6</div>
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick= "clicou ('7')">7</div>
+                <div class="teclado--botao" onclick= "clicou ('8')">8</div>
+                <div class="teclado--botao" onclick= "clicou ('9')">9</div>
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick= "clicou ('0')">0</div>
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao btn--branco" onclick= "branco() ('1')">BRANCO</div>
+                <div class="teclado--botao btn--corrige" onclick= "corrige ('1')">CORRIGE</div>
+                <div class="teclado--botao btn--confirma" onclick= "confirma ('1')">CONFIRMA</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="etapas.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
